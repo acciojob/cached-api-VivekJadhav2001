@@ -5,7 +5,6 @@ function CachedAPIUseMemo() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // 🧠 useMemo used to store cached data for each userId
   const cache = useMemo(() => new Map(), []);
   console.log(cache,"Cache")
 
